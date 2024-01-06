@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online shopping</title>
+</head>
+<body>
+    <header>
+        <h1>Quite Decent Store</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/clothing">Clothing</a>
+                    <ul>
+                        <li><a href="/clothing/jackets">Jackets</a></li>
+                        <li><a href="/clothing/trousers">Trousers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/shoes">Shoes</a>
+                    <ul>
+                        <li><a href="/shoes/boots">Boots</a></li>
+                        <li><a href="/shoes/sneakers">Sneakers</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+            <section class="promotions">
+                <h2>Promotions</h2>
+                <p>20% discount on all shoes</p>
+            </section>
+            <section class="about">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+        {% endblock %}
+    </main>
+    <footer>
+        <p>© 2024 Quite Decent Store</p>
+    </footer>
+</body>
+</html>
