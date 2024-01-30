@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Downloader</title>
+</head>
+<body>
+    <h1>Image Downloader</h1>
+    <p>Enter image URLs (one per line) and optionally choose a concurrency method:</p>
+    <form action="/download" method="post">
+        <label for="urls">Image URLs:</label><br>
+        <textarea name="urls" id="urls" rows="5" cols="40"></textarea><br>
+        <p>Choose a concurrency method:</p>
+        <input type="radio" id="multithreaded" name="concurrency" value="multithreaded">
+        <label for="multithreaded">Multithreaded</label><br>
+        <input type="radio" id="multiprocess" name="concurrency" value="multiprocess">
+        <label for="multiprocess">Multiprocess</label><br>
+        <input type="radio" id="asyncio" name="concurrency" value="asyncio">
+        <label for="asyncio">Asyncio</label><br>
+        <input type="submit" value="Download">
+    </form>
+</body>
+</html>
